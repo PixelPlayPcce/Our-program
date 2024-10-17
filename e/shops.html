@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilogy - Unique Shops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+        .menu-line {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .search-wrapper {
+            position: relative;
+        }
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input[type="search"] {
+            padding: 8px 8px 8px 40px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .shop-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 300px;
+        }
+        .shop-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .shop-info {
+            padding: 10px;
+        }
+        .shop-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .shop-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h1 id="trilogy" class="logo">Trilogy</h1>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="search" placeholder="Search unique shops...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="shop-grid">
+        <div class="shop-card">
+            <img src="https://content.jdmagicbox.com/comp/guwahati/d8/9999px361.x361.220212231941.f5d8/catalogue/gajanand-agarwal-beltola-guwahati-grocery-stores-z2hzbfq8cn.jpg?clr=" alt="Artisan's Haven" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Mr-Marvin</div>
+                <div class="shop-description">shop like its a black friday.</div>
+            </div>
+        </div>
+        <div class="shop-card">
+            <img src="https://res.cloudinary.com/dragonspell/images/w_800,h_533,dpr_auto,fl_progressive:steep,f_auto/w_800,h_533/v1659408454/www.travelportland.com/mktg-fr-20190316-outdoor-vintage-shopping-hawthorne-01/mktg-fr-20190316-outdoor-vintage-shopping-hawthorne-01.jpg" alt="Vintage Vault" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Vintage Vault</div>
+                <div class="shop-description">Curated collection of vintage clothing and accessories.</div>
+            </div>
+        </div>
+        <div class="shop-card">
+            <img src="https://media.architecturaldigest.com/photos/61b266074a0452347fd45692/master/w_1600%2Cc_limit/IMG-0012.JPG" alt="Green Thumb Botanicals" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Green Thumb Botanicals</div>
+                <div class="shop-description">Rare plants and botanical supplies for plant enthusiasts.</div>
+            </div>
+        </div>
+        <div class="shop-card">
+            <img src="https://content.jdmagicbox.com/comp/guwahati/dc/9999px361.x361.1232352911e2i8l8.dc/catalogue/novelty-book-shop-pan-bazaar-guwahati-second-hand-book-shops-vdoqgvc15q.jpg" alt="Pages & Chapters" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Pages & Chapters</div>
+                <div class="shop-description">Independent bookstore with a carefully curated selection.</div>
+            </div>
+        </div>
+        <div class="shop-card">
+            <img src="https://brownliving.in/cdn/shop/collections/eco-friendly-home-essential-products-499115_900x.jpg?v=1727028191" alt="Eco Essentials" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Eco Essentials</div>
+                <div class="shop-description">Sustainable and eco-friendly products for everyday use.</div>
+            </div>
+        </div>
+        <div class="shop-card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/ef/9f/46/7-pantry-shop-offers.jpg" alt="Gourmet Pantry" class="shop-image">
+            <div class="shop-info">
+                <div class="shop-name">Gourmet Pantry</div>
+                <div class="shop-description">Specialty foods and ingredients from around the world.</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

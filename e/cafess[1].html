@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilogy - Local Cafes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+        .menu-line {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .search-wrapper {
+            position: relative;
+        }
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input[type="search"] {
+            padding: 8px 8px 8px 40px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+        .cafe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .cafe-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 300px;
+        }
+        .cafe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .cafe-info {
+            padding: 10px;
+        }
+        .cafe-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .cafe-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h1 id="trilogy" class="logo">Trilogy</h1>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="search" placeholder="Search cafes...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cafe-grid">
+        <div class="cafe-card">
+            <img src="https://content.jdmagicbox.com/comp/goa/r4/0832px832.x832.221129233652.d3r4/catalogue/nanbai-malbhat-goa-bakeries-zuu08329to.jpg" alt="Cozy Corner Cafe" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">Cozy Corner Cafe</div>
+                <div class="cafe-description">A charming spot for artisanal coffee and homemade pastries.</div>
+            </div>
+        </div>
+        <div class="cafe-card">
+            <img src="https://content.jdmagicbox.com/comp/def_content/coffee_shops/default-coffee-shops-1.jpg" alt="The Daily Grind" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">The Daily Grind</div>
+                <div class="cafe-description">Specialty coffee and a relaxed atmosphere for work or study.</div>
+            </div>
+        </div>
+        <div class="cafe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCM3GJvltTFTfoFxPIF_kU9QHActhRGGTL44DyWly-td4_m0qiBUo-CgvVdJOBbMKzrs&usqp=CAU" alt="Brew & Bites" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">Brew & Bites</div>
+                <div class="cafe-description">Gourmet coffee paired with delicious light bites and snacks.</div>
+            </div>
+        </div>
+        <div class="cafe-card">
+            <img src="https://usroast.com/cdn/shop/articles/how-to-find-a-coffee-shop-near-me-957147_grande.jpg?v=1713886726" alt="Green Leaf Tea House" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">Green Leaf Tea House</div>
+                <div class="cafe-description">A serene spot offering a wide variety of premium teas.</div>
+            </div>
+        </div>
+        <div class="cafe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWX7_AoD3OlNXuqzjzUKINC0pboQ_Z7jgWg&s" alt="Sunrise Roasters" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">Sunrise Roasters</div>
+                <div class="cafe-description">Fresh, locally roasted coffee beans and expert baristas.</div>
+            </div>
+        </div>
+        <div class="cafe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2K1uhbTqSzmKh46KTz_xXwjqkLCh3slOCnw&s" alt="The Book Nook Cafe" class="cafe-image">
+            <div class="cafe-info">
+                <div class="cafe-name">The Book Nook Cafe</div>
+                <div class="cafe-description">A cozy cafe with great coffee and a curated book selection.</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
